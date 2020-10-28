@@ -1,0 +1,44 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+
+<a class="back-home btn" href="{% url 'teas:home' %}">Back to package</a>
+
+<div class="board">
+    <div class="board-head">
+        <div class="board-head-main">T A V A L O N</div>
+        <div class="board-head-sub">THE FUTURE OF TEA</div>
+    </div>
+    <div class="board-main">Tavalon's goal is not only to create the best, premium tea blends the world has ever known, but also to cater these tea blends to the American palate.</div>
+    <div class="board-main">Utilizing over 200 focus groups to ensure that we've created absolutely delicious, one-of-a-kind recipes that will fit your tasters, our Tea Sommelier Chris Cason selects and blends premium loose leaf teas from all over the world.</div>
+</div>
+
+<div class="container">
+
+{% for tea in tea_list %}
+
+<div class="pack">
+    <div class="head">
+        <div class="head-sub">THE FUTURE OF TEA</div>
+        <div class="head-main">T A V A L O N</div>
+    </div>
+    <main>
+        <div class="category">{{tea.category}}</div>
+        <div class="tea-name" style="color:{{tea.color}};">{{tea.name}}</div>
+        <div class="center-line">
+            <hr style="border-top:1px solid {{tea.color}};">
+            <i class="fas fa-leaf" style="color:{{tea.color}};"></i>
+        </div> 
+        <div class="description">{{tea.description}}</div>
+    </main>
+    <div class="foot">
+        1 sachet / NET WT {{tea.weight}}g
+    </div>
+</div>
+
+{% endfor %}
+
+</div>
+
+{% endblock content %}

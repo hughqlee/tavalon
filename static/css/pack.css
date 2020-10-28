@@ -1,0 +1,99 @@
+.back-home {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    background-color: ivory;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.back-home:hover {
+    background-color: rgb(249, 249, 240);
+}
+
+.container {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pack {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 220px;
+    height: 380px;
+    background-color: ivory;
+    margin: 5px;
+}
+
+.head {
+    margin: 10px;
+}
+
+.head-sub {
+    text-align: center;
+    font-size: x-small;
+    letter-spacing: 0.2rem;
+}
+
+.head-main {
+    text-align: center;
+    font-size: large;
+    letter-spacing: 0.2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category {
+    margin-bottom: 5px;
+}
+
+.tea-name {
+    height: 64px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.center-line {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.fa-leaf {
+    position: relative;
+    left: 43%;
+    display: inline-block;
+    background-color: ivory;
+    z-index: 2;
+    font-size: small;
+    text-align: center;
+    width: 30px
+}
+
+hr {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 1;
+}
+
+.description {
+    margin: 0 5px;
+    padding-bottom: 50px;
+    font-size: xx-small;
+    text-align: center;
+}
+
+.foot {
+    font-size: small;
+    text-align: center;
+    margin-bottom: 10px;
+}

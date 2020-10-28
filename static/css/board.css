@@ -1,0 +1,36 @@
+.board {
+    border-radius: 5px;
+    background-color: ivory;
+    width: 700px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+.board-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.board-head-main {
+    text-align: center;
+    font-size: large;
+}
+
+.board-head-sub {
+    text-align: center;
+    font-size: small;
+}
+
+.board-main {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+    text-align: center;
+}

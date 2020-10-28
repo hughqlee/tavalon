@@ -1,0 +1,85 @@
+@import 'reset.css';
+@import 'pack.css';
+@import 'board.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(0,0,0,0.08);
+}
+
+a {
+    color: black !important;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.package {
+    position: relative;
+    width: 700px;
+    height: 230px;
+    background-color: ivory;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: skew(1deg, 1deg);
+    box-shadow: 120px -90px 30px rgba(0,0,0,0.08);
+    transition: 0.5s;
+}
+
+.package:hover {
+    transform: skew(1deg, 1deg) translate(-30px, 30px);
+    box-shadow: 150px -120px 30px rgba(0,0,0,0.08);
+}
+
+.package:before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(251, 251, 240);
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+}
+
+.package:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -60px;
+    width: 60px;
+    height: 100%;
+    background-color: rgb(249, 249, 240);
+    transform-origin: left;
+    transform: skewY(-45deg);
+}
+
+.main-title {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+}
+
+.inst {
+    margin-top: 50px;
+}
